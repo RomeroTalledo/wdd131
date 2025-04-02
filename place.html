@@ -1,95 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131: Dynamic Web Fundamentals - Dallin Romero Talledo">
-    <meta name="author" content="Dallin Romero Talledo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 131: Dynamic Web Fundamentals - Dallin Romero Talledo"
+    />
+    <meta name="author" content="Dallin Romero Talledo" />
     <title>Madagascar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
     <script src="scripts/place.js" defer></script>
-    <script src="scripts/getdates.js"></script>   
-</head>
-    <body>
-        <header>
-            <h1>Madagascar</h1>
-        </header>
-        <main class="container">
-            <div class="hero-section">
-                <picture class="hero">
-                    <source media="(min-width: 1000px)" srcset="images/lemur2.jpg">
-                    <source media="(min-width: 620px)" srcset="images/lemur.webp">
-                    <img src="images/madagascar.webp" alt="Lemur">
-                </picture>
-            </div>
-            <div class="data">
-                <h2 class="box-title">Data</h2>
-                <table>
-                    <tr>
-                        <td class="label"><b>Area:</b></td>
-                        <td>587,041 sq Km</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Population:</b></td>
-                        <td>27,691,018</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Capital:</b></td>
-                        <td>Antananarivo</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Languages:</b></td>
-                        <td>Malagasy, French</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Currency:</b></td>
-                        <td>Malagasy Ariary</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Time Zone:</b></td>
-                        <td>UTC+3</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Calling Code:</b></td>
-                        <td>+261</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Internet TLD:</b></td>
-                        <td>.mg</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="weather">
-                <h2 class="box-title">Weather <span class="weather-icon">&#9925;</span></h2>
-                <img src="images/weather.svg" alt="light weather">
-                <table>
-                    <tr>
-                        <td class="label"><b>Temperature:</b></td>
-                        <td>10 °C</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Conditions:</b></td>
-                        <td>Partly Cloudy</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Wind:</b></td>
-                        <td>5 km/h</td>
-                    </tr>
-                    <tr>
-                        <td class="label"><b>Wind Chill:</b></td>
-                        <td>9.8 °C</td>
-                    </tr>
-                </table>
-            </div>
-        </main>
-        <footer>
-            <p>&copy; <span id="currentyear"></span> Dallin Romero Talledo • Lima, Peru</p>
-            <p id="lastModified"></p>
-        </footer>
-    </body>
-    
-    </html>
+    <script src="scripts/getdates.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Madagascar</h1>
+    </header>
+    <main class="container">
+      <div class="hero-section">
+        <picture class="hero">
+          <source media="(min-width: 1000px)" srcset="images/lemur2.jpg" />
+          <source media="(min-width: 620px)" srcset="images/lemur.webp" />
+          <img src="images/madagascar.webp" alt="Lemur" />
+        </picture>
+      </div>
+      <div class="data">
+        <h2 class="box-title">Data</h2>
+        <table>
+          <tr>
+            <td class="label"><b>Area:</b></td>
+            <td>587,041 sq Km</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Population:</b></td>
+            <td>27,691,018</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Capital:</b></td>
+            <td>Antananarivo</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Languages:</b></td>
+            <td>Malagasy, French</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Currency:</b></td>
+            <td>Malagasy Ariary</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Time Zone:</b></td>
+            <td>UTC+3</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Calling Code:</b></td>
+            <td>+261</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Internet TLD:</b></td>
+            <td>.mg</td>
+          </tr>
+        </table>
+      </div>
+      <div class="weather">
+        <h2 class="box-title">
+          Weather <span class="weather-icon">&#9925;</span>
+        </h2>
+        <img src="images/weather.svg" alt="light weather" />
+        <table>
+          <tr>
+            <td class="label"><b>Temperature:</b></td>
+            <td>10 °C</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Conditions:</b></td>
+            <td>Partly Cloudy</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Wind:</b></td>
+            <td>5 km/h</td>
+          </tr>
+          <tr>
+            <td class="label"><b>Wind Chill:</b></td>
+            <td>9.8 °C</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Dallin Romero Talledo • Lima, Peru
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

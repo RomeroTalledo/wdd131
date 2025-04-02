@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #0e9149;
+  --secondary-color: #290c5e;
+  --accent-color: #415a77;
+  --light-color: #778da9;
+  --text-color: #cfd4bf;
+
+  --font-primary: "Poppins", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-thin: 100;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Header */
+header {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  color: var(--text-color);
+}
+
+header h1 {
+  width: 190px;
+  margin: auto 5px;
+  font-size: 20px;
+}
+
+#menu {
+  font-size: 2rem;
+  border: 0;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.open::before {
+  content: "❎";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.navigation a:hover {
+  color: var(--light-color);
+  text-decoration: underline 2px solid var(--light-color);
+  transition: all 5ms ease-in-out;
+}
+
+.open a {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Main */
+main {
+  margin: 1rem auto;
+  max-width: 730px;
+}
+
+.home {
+  border-bottom: 1px solid var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 20px;
+  place-items: center;
+  margin: 5px 20px;
+}
+
+.temple-card {
+  max-width: 300px;
+  height: 350px;
+  background-color: var(--text-color);
+  border: 1px solid var(--light-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(13, 27, 42, 0.8);
+  margin-bottom: 30px;
+}
+
+.temple-card img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+
+.temple-info {
+  margin-top: 10px;
+}
+
+.temple-info h2 {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.temple-info p {
+  font-size: 12px;
+  color: var(--accent-color);
+  padding: 5px;
+}
+
+.temple-info strong {
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: 16px;
+}
