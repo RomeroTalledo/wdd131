@@ -1,0 +1,28 @@
+body {
+  font-family: "Verdana", sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  padding: 20px;
+  line-height: 1.6;
+}
+h1,
+h2 {
+  color: #4b0082;
+}
+h1 {
+  border-bottom: 2px solid #4b0082;
+  padding-bottom: 5px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.wireframe h2{
+    color: #4b0082;
+}
+.wireframe img {
+  max-width: 60%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
