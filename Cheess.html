@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess World - Home</title>
+    <link rel="stylesheet" href="styles/chess.css" />
+    <link rel="stylesheet" href="styles/cheess-large.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.9.81/build/spline-viewer.js"
+    ></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/cheess.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">Chess World</div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="history.html">History</a>
+          <a href="learn.html">Learn</a>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <section class="text-content">
+          <h1>Welcome to Chess World</h1>
+          <p>
+            Explore the fascinating universe of chess. Learn the history, master
+            the moves, and become a champion!
+          </p>
+
+          <div class="button-container">
+            <button data-topic="history">History of Chess</button>
+            <button data-topic="moves">Famous Moves</button>
+            <button data-topic="rules">How to Play</button>
+          </div>
+
+          <section class="description">
+            <p>
+              Discover how chess has evolved through centuries and how it
+              continues to challenge minds worldwide.
+            </p>
+          </section>
+
+          <section class="subscribe">
+            <h2>Subscribe for Updates</h2>
+            <form id="subscribe-form">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </section>
+        </section>
+
+        <aside class="image-box">
+          <img src="images/peon.webp" alt="Chess board" loading="lazy" />
+        </aside>
+      </main>
+
+      <footer class="footer">
+        <h2>
+          &copy;<span id="currentyear"></span> Dallin Romero Talledo • Lima,
+          Peru
+        </h2>
+        <p id="lastModified"></p>
+      </footer>
+    </div>
+  </body>
+</html>

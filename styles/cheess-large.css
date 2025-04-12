@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-box img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .button-container button {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  }
+  
