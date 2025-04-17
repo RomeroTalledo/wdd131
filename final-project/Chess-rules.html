@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chess Pieces</title>
+  <link rel="stylesheet" href="styles/chess.css" />
+  <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chess_plt45.svg/32px-Chess_plt45.svg.png"
+      type="image/png"
+    />
+  <script src="scripts/chess-rules.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1 class="nameHeader">Chess</h1>
+    <button id="menu">☰</button>
+    <nav class="navigation">
+      <a href="#" id="" class="active">All</a>
+      <a href="#" id="menor">Low Value</a>
+      <a href="#" id="mayor">High Value</a>
+      <a href="#" id="rey">King</a>
+    </nav>
+  </header>
+
+  <h2 class="title">All Pieces</h2>
+  <div class="container home"></div>
+  <table border="3">
+    <thead>
+      <tr>
+        <th>Piece</th>
+        <th>Symbol</th>
+        <th>Movement</th>
+        <th>Special Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>King</td>
+        <td>♔</td>
+        <td>One square in any direction</td>
+        <td>Can castle with a rook if not moved</td>
+      </tr>
+      <tr>
+        <td>Queen</td>
+        <td>♕</td>
+        <td>Any number of squares in any direction</td>
+        <td>Most powerful piece</td>
+      </tr>
+      <tr>
+        <td>Rook</td>
+        <td>♖</td>
+        <td>Horizontally or vertically</td>
+        <td>Can castle with the king</td>
+      </tr>
+      <tr>
+        <td>Bishop</td>
+        <td>♗</td>
+        <td>Diagonally</td>
+        <td>Stays on the same color square</td>
+      </tr>
+      <tr>
+        <td>Knight</td>
+        <td>♘</td>
+        <td>L-shape: 2 squares in one direction, then 1 square perpendicular </td>
+        <td>Can jump over other pieces</td>
+      </tr>
+      <tr>
+        <td>Pawn</td>
+        <td>♙</td>
+        <td>One square forward (two on first move), captures diagonally </td>
+        <td>Can promote when reaching the 8th rank</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="button-container-2">
+    <a href="Chess.html"><button>Home</button></a>
+    <a href="Chess-champions.html"><button>Champions</button></a>
+    <a href="Chess-history.html"><button>History</button></a>
+  </div>
+  <footer class="footer">
+    <h2>
+      &copy;<span id="currentyear"></span> Dallin Romero Talledo • Lima,
+      Peru
+    </h2>
+    <p id="lastModified"></p>
+  </footer>
+</div>
+</body>
+</html>

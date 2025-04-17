@@ -6,36 +6,28 @@
     <title>Chess World - Home</title>
     <link rel="stylesheet" href="styles/chess.css" />
     <link rel="stylesheet" href="styles/cheess-large.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/@splinetool/viewer@1.9.81/build/spline-viewer.js"
-    ></script>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chess_plt45.svg/32px-Chess_plt45.svg.png"
+      type="image/png"
+    />
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/cheess.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="logo">Chess World</div>
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="history.html">History</a>
-          <a href="learn.html">Learn</a>
-        </nav>
+        <div class="logo">Chess World ♞</div>
       </header>
-
       <main class="main-content">
         <section class="text-content">
           <h1>Welcome to Chess World</h1>
           <p>
-            Explore the fascinating universe of chess. Learn the history, master
-            the moves, and become a champion!
+            Explore the fascinating world of chess. Learn the history, master the rules, and become a champion!
           </p>
-
           <div class="button-container">
-            <button data-topic="history">History of Chess</button>
-            <button data-topic="moves">Famous Moves</button>
-            <button data-topic="rules">How to Play</button>
+            <a href="Chess-history.html"><button>History of Chess</button></a>
+            <a href="Chess-champions.html"><button>Champions</button></a>
+            <a href="Chess-rules.html"><button>How to Play</button></a>
           </div>
 
           <section class="description">
@@ -59,7 +51,6 @@
           <img src="images/peon.webp" alt="Chess board" loading="lazy" />
         </aside>
       </main>
-
       <footer class="footer">
         <h2>
           &copy;<span id="currentyear"></span> Dallin Romero Talledo • Lima,
